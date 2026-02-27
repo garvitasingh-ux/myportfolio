@@ -1,2 +1,2 @@
 # myportfolio
-this repository tells you about myself 
+this repository of mine tells you about myself!
