@@ -28,6 +28,12 @@
     <section id="home">
         <h2>HOBBY</h2>
         <H3>Sketching</H3>
+        <input type="text" id="hobbyInput" placeholder="Enter new hobby benefit">
+        <button onclick="addHobby()">Add Benefit</button>
+        <ol id="hobbyList">
+            <li>Improves creativity <button onclick="deleteItem(this)">Delete</button></li>
+            <li>Reduces stress <button onclick="deleteItem(this)">Delete</button></li>
+        </ol>
         <div class="sketching-images">
         <img src="http://img14.deviantart.net/651a/i/2015/116/4/6/first_landscape_drawing_by_jibari_chan-d48ak45.jpg" alt="Sketch 1">
 </div> 
@@ -89,19 +95,21 @@
     <section id="contact">
         <h2>Contact Me</h2>
 
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+       <form id="contactForm">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+       </form>
     </section>
 
     <!-- 1.7 Footer -->
     <footer>
         <p>Connect with me:</p>
         <a href="https://github.com/garvitasingh-ux">GitHub</a>
+        <p id="dateTime"></p>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
